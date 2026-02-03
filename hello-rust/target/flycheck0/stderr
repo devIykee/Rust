@@ -1,0 +1,86 @@
+   0.054173700s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello-rust"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { name: "hello-rust", doc: true, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\src\\main.rs", Edition2024) }
+   0.054420000s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello-rust"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-302d30fe497c3850\bin-hello-rust`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.256069500s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello-rust"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: true }/TargetInner { name: "hello-rust", doc: true, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\src\\main.rs", Edition2024) }
+   0.257245400s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello-rust"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-8c50465ac4037360\test-bin-hello-rust`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.259184900s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { kind: "example", name: "hello", tested: false, benched: false, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\hello.rs", Edition2024) }
+   0.259246200s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="hello"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-c287493a185820b7\example-hello`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.28s
