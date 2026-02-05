@@ -17,4 +17,5 @@ fn main() {
     let z: i32 = sum(x, y);
     print("😭".to_string());
     println!("the sum of {x} and {y} is {z}")
+    let w  = "s";
 }
