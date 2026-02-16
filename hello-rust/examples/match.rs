@@ -1,18 +1,18 @@
 #![allow(unused)]
 
 fn main() {
-    // let x = 1;
-    // let x = 3;
+    let x = 1;
+    let x = 3;
 
-    // match x {
-    //     1 => println!("{} is one", x),
-    //     3..=10 => println!("It's within the range of 3 - 10"),
-    //     i @ _ => println!("{} is not one", i),
-    // }
+    match x {
+        1 => println!("{} is one", x),
+        3..=10 => println!("It's within the range of 3 - 10"),
+        i @ _ => println!("{} is not one", i),
+    }
 
-    // //option
-    // //result
-    //enum
+    //option
+    //result
+    enum
 
     let y: Option<i32> = Some(3);
     let y: Option<i32> = None;
@@ -27,4 +27,5 @@ fn main() {
         Ok(val) => print!("WE got a good value {}", val),
         Err(err) => println!("Error: {}", err),
     }
+    
 }
