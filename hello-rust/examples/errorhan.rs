@@ -12,7 +12,7 @@ fn main() {
         None => println!("None"),
     }
 
-    let x = 900;
+    let x = 9;
     let y = 3;
 
     let q: Result<i32, String> = if y != 0 {
