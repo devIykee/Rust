@@ -12,7 +12,7 @@ fn main() {
 
     //option
     //result
-    enum
+    // enum
 
     let y: Option<i32> = Some(3);
     let y: Option<i32> = None;
