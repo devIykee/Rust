@@ -1,5 +1,6 @@
-   0.275679200s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="generic_trait_test"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { kind: "example", name: "generic_trait_test", tested: false, benched: false, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\generic_trait_test.rs", Edition2024) }
-   0.275804000s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="generic_trait_test"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-81c05eae80656788\example-generic_trait_test`
+    Blocking waiting for file lock on package cache
+   0.303137200s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="generic_trait_test"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { kind: "example", name: "generic_trait_test", tested: false, benched: false, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\generic_trait_test.rs", Edition2024) }
+   0.303243200s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="generic_trait_test"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-7b4f8f5c46063bca\example-generic_trait_test`
 
 Caused by:
     The system cannot find the file specified. (os error 2)
@@ -26,10 +27,35 @@ Stack backtrace:
   18: git_midx_writer_dump
   19: BaseThreadInitThunk
   20: RtlUserThreadStart
-   0.307145200s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="iterate"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\iterate.rs"
-   0.307205400s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="iterate"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\target\\debug\\.fingerprint\\hello-rust-cb6e539fc06c267f\\dep-example-iterate"
-   0.307230000s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="iterate"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13416361493, nanos: 863964700 } < FileTime { seconds: 13416361522, nanos: 235577800 }
-   0.307643500s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="iterate"}: cargo::core::compiler::fingerprint: fingerprint dirty for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { kind: "example", name: "iterate", tested: false, benched: false, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\iterate.rs", Edition2024) }
-   0.307698900s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="iterate"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\target\\debug\\.fingerprint\\hello-rust-cb6e539fc06c267f\\dep-example-iterate", reference_mtime: FileTime { seconds: 13416361493, nanos: 863964700 }, stale: "C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\iterate.rs", stale_mtime: FileTime { seconds: 13416361522, nanos: 235577800 } }))
+   0.370850600s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="join_select"}: cargo::core::compiler::fingerprint: stale: missing "C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\target\\debug\\.fingerprint\\hello-rust-8b1bc7bfd6f419e2\\dep-example-join_select"
+   0.370946600s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="join_select"}: cargo::core::compiler::fingerprint: fingerprint error for hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)/Check { test: false }/TargetInner { kind: "example", name: "join_select", tested: false, benched: false, ..: with_path("C:\\Iyke Stuff\\Coding\\Rust\\hello-rust\\examples\\join_select.rs", Edition2024) }
+   0.371013300s  INFO prepare_target{force=false package_id=hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust) target="join_select"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Iyke Stuff\Coding\Rust\hello-rust\target\debug\.fingerprint\hello-rust-8b1bc7bfd6f419e2\example-join_select`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
     Checking hello-rust v0.1.0 (C:\Iyke Stuff\Coding\Rust\hello-rust)
 error: could not compile `hello-rust` (example "generic_trait_test") due to 6 previous errors
+warning: build failed, waiting for other jobs to finish...
